@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Faiz Sanjaya | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Faiz</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#education" class="nav-link" data-text="Education">Education</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">
+                    <span class="name-letter" style="--i:0">M</span><span class="name-letter" style="--i:1">u</span><span class="name-letter" style="--i:2">h</span><span class="name-letter" style="--i:3">a</span><span class="name-letter" style="--i:4">m</span><span class="name-letter" style="--i:5">m</span><span class="name-letter" style="--i:6">a</span><span class="name-letter" style="--i:7">d</span>
+                    <br>
+                    <span class="name-letter accent" style="--i:8">F</span><span class="name-letter accent" style="--i:9">a</span><span class="name-letter accent" style="--i:10">i</span><span class="name-letter accent" style="--i:11">z</span>
+                    <span class="name-letter accent" style="--i:12">S</span><span class="name-letter accent" style="--i:13">a</span><span class="name-letter accent" style="--i:14">n</span><span class="name-letter accent" style="--i:15">j</span><span class="name-letter accent" style="--i:16">a</span><span class="name-letter accent" style="--i:17">y</span><span class="name-letter accent" style="--i:18">a</span>
+                </span>
+            </h1>
+            <div class="hero-role" data-aos="fade-up" data-aos-delay="200">
+                <span class="role-prefix">&gt;&gt;</span>
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                Crafting digital experiences with clean code & creative solutions.
+                <br>Based in <span class="highlight">Depok, West Java, Indonesia</span>
+            </p>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+                <a href="#projects" class="btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+        <div class="hero-gradient-orb orb-1"></div>
+        <div class="hero-gradient-orb orb-2"></div>
+        <div class="hero-gradient-orb orb-3"></div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper" data-aos="fade-right">
+                    <div class="about-image-frame">
+                        <div class="about-avatar">
+                            <img src="assets/profile.jpeg" alt="Muhammad Faiz Sanjaya" class="profile-photo">
+                        </div>
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
+                    </div>
+                    <div class="about-floating-card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack Dev</span>
+                    </div>
+                    <div class="about-floating-card card-2">
+                        <i class="fas fa-bug"></i>
+                        <span>QA Expert</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <div class="about-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">about-faiz.js</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="keyword">const</span> <span class="variable">faiz</span> = {
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                &nbsp;&nbsp;<span class="property">role</span>: <span class="string">"Full Stack Developer"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                &nbsp;&nbsp;<span class="property">university</span>: <span class="string">"Telkom University"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                &nbsp;&nbsp;<span class="property">major</span>: <span class="string">"Information Systems"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                &nbsp;&nbsp;<span class="property">focus</span>: <span class="string">"EISD"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">"Building Digital Solutions"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">7</span>
+                                &nbsp;&nbsp;<span class="property">location</span>: <span class="string">"Depok, West Java 📍"</span>,
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">8</span>
+                                };
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about-text">
+                        I am a <span class="highlight">8th-semester Information Systems</span> student at 
+                        <span class="highlight">Telkom University</span> with a concentration in Enterprise 
+                        Information System Development (EISD). I combine my passion for 
+                        <span class="highlight">Full Stack Development</span> with professional 
+                        <span class="highlight">Quality Assurance</span> experience.
+                    </p>
+                    <p class="about-text">
+                        With <span class="highlight">1 year of QA experience</span> across two companies, 
+                        I bring a unique perspective — I don't just build applications, I ensure they're 
+                        robust, reliable, and bug-free. My toolkit includes Selenium IDE, JMeter, and 
+                        comprehensive manual testing approaches.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Depok, West Java</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Education</span>
+                                <span class="info-value">Telkom University</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">faizsanjaya705@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+62 813 8301 7175</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tech <span class="gradient-text">Arsenal</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-tabs" data-aos="fade-up">
+                <button class="skill-tab active" data-tab="development">
+                    <i class="fas fa-code"></i> Development
+                </button>
+                <button class="skill-tab" data-tab="testing">
+                    <i class="fas fa-vial"></i> Testing & QA
+                </button>
+                <button class="skill-tab" data-tab="tools">
+                    <i class="fas fa-tools"></i> Tools & Others
+                </button>
+                <button class="skill-tab" data-tab="soft">
+                    <i class="fas fa-heart"></i> Soft Skills
+                </button>
+            </div>
+
+            <div class="skills-content">
+                <!-- Development Skills -->
+                <div class="skill-panel active" id="development">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <h4>Laravel</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <h4>Bootstrap</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h4>PHP</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h4>GitHub</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing Skills -->
+                <div class="skill-panel" id="testing">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in">
+                            <div class="skill-icon-wrapper testing">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Selenium IDE</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+                            <div class="skill-icon-wrapper testing">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h4>JMeter</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-icon-wrapper testing">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h4>Postman</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="skill-icon-wrapper testing">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h4>Manual Testing</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon-wrapper testing">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Manage Engine</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Skills -->
+                <div class="skill-panel" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fab fa-trello"></i>
+                            </div>
+                            <h4>Trello</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fab fa-jira"></i>
+                            </div>
+                            <h4>Jira</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h4>Figma</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h4>Visual Paradigm</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <h4>Archimate</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h4>Pentaho ETL</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h4>SAP ERP</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="skill-icon-wrapper tools">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h4>Cisco Packet Tracer</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="77"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-panel" id="soft">
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card" data-aos="flip-up" data-aos-delay="0">
+                            <div class="soft-icon"><i class="fas fa-microphone-alt"></i></div>
+                            <h4>Public Speaking</h4>
+                        </div>
+                        <div class="soft-skill-card" data-aos="flip-up" data-aos-delay="100">
+                            <div class="soft-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <h4>Problem Solving</h4>
+                        </div>
+                        <div class="soft-skill-card" data-aos="flip-up" data-aos-delay="200">
+                            <div class="soft-icon"><i class="fas fa-handshake"></i></div>
+                            <h4>Collaboration</h4>
+                        </div>
+                        <div class="soft-skill-card" data-aos="flip-up" data-aos-delay="300">
+                            <div class="soft-icon"><i class="fas fa-users"></i></div>
+                            <h4>Team Work</h4>
+                        </div>
+                        <div class="soft-skill-card" data-aos="flip-up" data-aos-delay="400">
+                            <div class="soft-icon"><i class="fas fa-clock"></i></div>
+                            <h4>Time Management</h4>
+                        </div>
+                        <div class="soft-skill-card" data-aos="flip-up" data-aos-delay="500">
+                            <div class="soft-icon"><i class="fas fa-crown"></i></div>
+                            <h4>Leadership</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="company-info">
+                                <h3>PT. Sinar Harsa Grasia</h3>
+                                <span class="role-badge">Quality Assurance</span>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                Apr 2025 - Sept 2025
+                            </div>
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Conducted thorough testing on both web-based inventory and retail POS systems</li>
+                            <li>Created detailed testing documentation and coordinated closely with developers for improvements and issue resolution</li>
+                            <li>Utilized Selenium IDE and manual testing methods to ensure system functionality</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Selenium IDE</span>
+                            <span>Manual Testing</span>
+                            <span>POS Systems</span>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="company-info">
+                                <h3>PT. Arranet Indonesia Sejahtera</h3>
+                                <span class="role-badge">Quality Assurance</span>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                Sept 2024 – Mar 2025
+                            </div>
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Performed manual and automated testing on Android and web applications</li>
+                            <li>Identified bugs and created structured testing documentation (Test Case, Bug Result, Roll Out, and Test Operational)</li>
+                            <li>Collaborated closely with the development team for debugging and retesting processes</li>
+                            <li>Managed testing workflows and documentation via Trello</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Android Testing</span>
+                            <span>Web Testing</span>
+                            <span>Trello</span>
+                            <span>JMeter</span>
+                            <span>Selenium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="pos">POS / Inventory</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="android" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Arranet Indonesia Sejahtera</div>
+                        <h3>Mini ATM Rintis (StarBizz)</h3>
+                        <p>Android-based application for agents to perform banking activities on EDC devices. Tested on EDC P1000.</p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>EDC</span>
+                            <span>Banking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="android" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Arranet Indonesia Sejahtera</div>
+                        <h3>E-Form Mobile</h3>
+                        <p>Android app for sales agents to register and edit agent data with comprehensive device testing.</p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>Trello</span>
+                            <span>Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Arranet Indonesia Sejahtera</div>
+                        <h3>E-Form Web</h3>
+                        <p>Web portal for management to review agent submissions. Tested using Selenium IDE and JMeter.</p>
+                        <div class="project-tech">
+                            <span>Web</span>
+                            <span>Selenium</span>
+                            <span>JMeter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Arranet Indonesia Sejahtera</div>
+                        <h3>Agent Management System</h3>
+                        <p>Web platform to monitor transactions, manage agents, and assign MID/TID with full functionality testing.</p>
+                        <div class="project-tech">
+                            <span>Web</span>
+                            <span>Trello</span>
+                            <span>Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="android" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Arranet Indonesia Sejahtera</div>
+                        <h3>Bayar Bayar Plus</h3>
+                        <p>Android e-commerce app for top-ups and bill payments, tested on mobile and EDC devices.</p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>E-Commerce</span>
+                            <span>EDC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="android" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Arranet Indonesia Sejahtera</div>
+                        <h3>PayAja & ArranetPay</h3>
+                        <p>Digital payment apps for various transactions. Conducted feature testing on Android and EDC platforms.</p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>Payment</span>
+                            <span>EDC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="pos" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Sinar Harsa Grasia</div>
+                        <h3>Mutiara Super Kitchen (MSK)</h3>
+                        <p>Web app for stock, item tracking, and inventory management with Selenium-based testing.</p>
+                        <div class="project-tech">
+                            <span>Web</span>
+                            <span>Selenium</span>
+                            <span>Inventory</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="pos" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-company">PT. Sinar Harsa Grasia</div>
+                        <h3>Point of Sales (POS)</h3>
+                        <p>Retail POS system for transactions, inventory, and reporting. Manually tested all modules.</p>
+                        <div class="project-tech">
+                            <span>POS</span>
+                            <span>Retail</span>
+                            <span>Manual Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-grid">
+                <div class="education-column" data-aos="fade-right">
+                    <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    
+                    <div class="edu-card">
+                        <div class="edu-year">2022 - Present</div>
+                        <div class="edu-content">
+                            <h4>Telkom University</h4>
+                            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</p>
+                            <p class="edu-degree">Bachelor of Information Systems</p>
+                            <p class="edu-focus">Concentration: Enterprise Information System Development (EISD)</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-card">
+                        <div class="edu-year">2019 - 2022</div>
+                        <div class="edu-content">
+                            <h4>MA Al-Azhar Asy-Syarif</h4>
+                            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                            <p class="edu-degree">High School Diploma</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-column" data-aos="fade-left">
+                    <h3 class="column-title"><i class="fas fa-certificate"></i> Certifications</h3>
+
+                    <div class="cert-card">
+                        <div class="cert-icon cert-icon--sap"><i class="fas fa-industry"></i></div>
+                        <div class="cert-content">
+                            <h4>SAP Certification</h4>
+                            <p>Enterprise Resource Planning</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('System Analyst BNSP Certification', 'assets/sertifikat-system-analyst.pdf', 'Sertifikat_SystemAnalyst_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--bnsp"><i class="fas fa-user-tie"></i></div>
+                        <div class="cert-content">
+                            <h4>System Analyst BNSP</h4>
+                            <p>National Professional Certification</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('EPRT Certification — Pusat Bahasa Telkom University', 'assets/sertifikat-eprt.pdf', 'Sertifikat_EPRT_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--eprt"><i class="fas fa-language"></i></div>
+                        <div class="cert-content">
+                            <h4>EPRT Certification</h4>
+                            <p>Pusat Bahasa — Telkom University</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('Sertifikat Anti Korupsi — Telkom University', 'assets/sertifikat-anti-korupsi.pdf', 'Sertifikat_AntiKorupsi_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--tak"><i class="fas fa-shield-alt"></i></div>
+                        <div class="cert-content">
+                            <h4>Anti Korupsi (TAK)</h4>
+                            <p>Telkom University</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('CSS Certificate — HackerRank', 'assets/sertifikat-css.pdf', 'Sertifikat_CSS_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--css"><i class="fab fa-css3-alt"></i></div>
+                        <div class="cert-content">
+                            <h4>CSS — HackerRank</h4>
+                            <p>Frontend Styling Certification</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('Python Basic Certificate — HackerRank', 'assets/sertifikat-python.pdf', 'Sertifikat_Python_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--python"><i class="fab fa-python"></i></div>
+                        <div class="cert-content">
+                            <h4>Python Basic — HackerRank</h4>
+                            <p>Python Programming Certification</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('SQL Basic Certificate — HackerRank', 'assets/sertifikat-sql.pdf', 'Sertifikat_SQL_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--sql"><i class="fas fa-database"></i></div>
+                        <div class="cert-content">
+                            <h4>SQL Basic — HackerRank</h4>
+                            <p>Database Query Certification</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+
+                    <div class="cert-card cert-card--clickable" onclick="openCertModal('Node.js Basic Certificate — HackerRank', 'assets/sertifikat-nodejs.pdf', 'Sertifikat_NodeJS_FaizSanjaya.pdf')">
+                        <div class="cert-icon cert-icon--node"><i class="fab fa-node-js"></i></div>
+                        <div class="cert-content">
+                            <h4>Node.js Basic — HackerRank</h4>
+                            <p>Backend JavaScript Certification</p>
+                        </div>
+                        <div class="cert-view-btn"><i class="fas fa-eye"></i><span>Lihat</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Have a project in mind or just want to say hi? Let's talk!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:faizsanjaya705@gmail.com">faizsanjaya705@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+6281383017175">+62 813 8301 7175</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Depok, West Java, Indonesia</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="mailto:faizsanjaya705@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/6281383017175" class="social-link" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required autocomplete="off">
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required autocomplete="off">
+                            <label for="email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required autocomplete="off">
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICATE MODAL (Dynamic) ==================== -->
+    <div class="cert-modal-overlay" id="certModal" onclick="closeCertModal(event)">
+        <div class="cert-modal">
+            <div class="cert-modal-header">
+                <div class="cert-modal-title">
+                    <i class="fas fa-certificate"></i>
+                    <span id="certModalTitle">Certificate</span>
+                </div>
+                <button class="cert-modal-close" onclick="closeCertModalBtn()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cert-modal-body">
+                <iframe id="certModalIframe" src="" class="cert-iframe" title="Certificate"></iframe>
+            </div>
+            <div class="cert-modal-footer">
+                <a id="certModalDownload" href="" download="" class="cert-download-btn">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+                <a id="certModalOpen" href="" target="_blank" class="cert-open-btn">
+                    <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Designed & Built with <span class="heart">❤</span> by Muhammad Faiz Sanjaya</p>
+                <p class="footer-copyright">&copy; 2026 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
