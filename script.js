@@ -144,11 +144,11 @@ window.addEventListener('resize', () => {
 // ==================== TYPEWRITER EFFECT ====================
 const typewriterEl = document.getElementById('typewriter');
 const roles = [
-    'Full Stack Developer',
-    'Quality Assurance Engineer',
+    'Quality Assurance',
+    'Full Stack Dev',
     'Web Developer',
-    'Problem Solver',
-    'Tech Enthusiast'
+    'System Analyst',
+    'Business Analyst'
 ];
 
 let roleIndex = 0;
